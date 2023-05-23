@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Calculator</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="calculator">
-        <div class="screen"></div>
+        <div class="screen" id="disp"></div>
         <div class="bottom">
             <div class="numbers">
                 <div class="row">
@@ -31,7 +31,7 @@
 
                 <div class="row">
                     <button id="0" class="nums">0</button>
-                    <button id="decimal">.</button>
+                    <button id="." class="nums">.</button>
                     <button id="neg">(-)</button>
                 </div>
                 <div class="row">
@@ -40,11 +40,11 @@
             </div>
 
             <div class="operators">
-                <button id="plus">+</button>
-                <button id="minus">-</button>
-                <button id ="mult">*</button>
-                <button id="division">%</button>
-                <button id="eq">=</button>
+                <button id="plus" class="opps">+</button>
+                <button id="minus" class="opps">-</button>
+                <button id ="mult" class="opps">*</button>
+                <button id="division" class="opps">/</button>
+                <button id="eq" >=</button>
             </div>
         </div>
     </div>

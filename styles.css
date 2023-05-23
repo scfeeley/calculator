@@ -1,3 +1,13 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: radial-gradient(white, skyblue);
+}
 .calculator{
     width: 300px;
     height: 400px;
@@ -6,16 +16,29 @@
     border:5px black solid;
     align-items: center;
     justify-content: center;
-    margin: auto auto;
+    margin: auto auto auto auto;
+    background: radial-gradient(gray,navy);
 }
 .screen{
-    width: 200px;
+    width: 220px;
     height: 100px;
     border: 5px black solid;
-    background-color: gray;
+    background: radial-gradient(white,gray);
+    font-size: 40px;
+    display:flex;
+    align-items: center;
+    overflow: hidden;
+    padding: 10px;
+    margin-bottom: 10px;
 }
-.calculator{
-    flex-grow: 3;
+
+.operators button, #clear{
+    background-color:gray;
+    color:white;
+}
+.numbers button{
+    background-color:black;
+    color:white;
 }
 button{
     width: 50px;
